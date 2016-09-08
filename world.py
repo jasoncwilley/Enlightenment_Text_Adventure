@@ -28,40 +28,36 @@ class EnemyTile(MapTile):
         r = random.random()
         if r < 0.50:
             self.enemy = enemies.Wolves()
-            self.alive_text = "Out of nowhere you find yourself surrounded pack" \
-                              "by a pack of vicious haters.  These wolf like creatures" \
-                              "feast on your fears and want nothing more than to hinder"\
-                              "your creativity and keep you from reaching the other side"\
-                              "of the City."\
-                              "Nice move!  You were able to slay the wolves of self-dout" \
-                              "Dout will kills more dreams than failure ever will."                                               
-                                                              
-                                                                                         
-                                
-            self.dead_text = "The wolves proved to be stronger than you thought.  While you"\
-                             "were not able to reach total enlightment hopefully you learned"\
-                             "something about yourself which can assist you on your path."
-        
-
-
-
-
-
-
-
-
+            self.alive_text = """
+********************************************************************************************
+Out of nowhere you find yourself surrounded by a pack of vicious hater wolves.  These wolf 
+like creatures feast on insecurities and would like nothing more than to eviscerate your 
+self-confidence. *******************************************************
+                *Not Today!  Your Attack seems to be working. Nice move!*
+                 *******************************************************                     
+             ****************************************************************                 
+           **"Dout will kills more dreams than failure ever will." --Kassem**
+********************************************************************************************"""
+            self.dead_text = """The wolves proved to be stronger than you thought.  You were 
+not able to reach the the Magical Forest on the other side of the City.  Learning from your 
+mistakes will put your on the fast track to Enlightenment and if you can apply thesel lessons
+in your next life you be more likely to suceed.                                               
+********************************************************************************************S
+              **"Dout will kills more dreams than failure ever will." --Kassem**
+********************************************************************************************"""
 
         elif r < 0.80:
             self.enemy = enemies.Ogre()
-            self.alive_text = "An ogre sized ego is blocking your path!Egos that have grown to the" \
-                              "size of this the Ogre's can do only one thing! Well two"\
-                              "things be 100% correct all the time and keeping you" \
-                              "from achieving enlightment !" \
-                              "Learning to apologize does not mean you are wrong and another"\
-                              "person is right. Respecting other's beliefs even when they go against"\
-                              "your own may not easy but hey!, do you want to be right or happy?" \
-                              "The choice is yours"
-            self.dead_text=  "Wow! You were able to check that ogre's ego with tact and class. Choices like that will surely lead you to the other side of the City."\
+            self.alive_text = """
+*********************************************************************************************
+An ogre sized ego is blocking your path!Egos that have grown to the ize of this the Ogre's 
+can do only one thing! Well 2 things, to be correct all the time and keeping you from 
+achieving enlightment Learning to apologize does not mean you are wrong and another person 
+is right. Respecting other's beliefs even when they go against your own may not easy but hey!, 
+Do you want to be right or happy? The choice is yours.
+*********************************************************************************************"""
+
+self.dead_text=  "Wow! You were able to check that ogre's ego with tact and class. Choices like that will surely lead you to the other side of the City."\
                               "The Ancients say 'Yeild to overcome; Bend and be straight; Empty and be full;"\
                               "Wear out to become new; Have little and gain; Have much and be confused...'" 
                                
