@@ -14,7 +14,7 @@ def play():
         if player.is_alive() and not player.victory:
             choose_action(room, player)
         elif not player.is_alive():
-            print("Your current adventure come to an end, an end of your choosing.  Not all paths lead to the other side of the City but are they not just as equally important as those that do?  You and only you can determine sucess or failure, each adventure is as unique as the adventurer.  'It is in your moments of decision that your destiny is shaped'.-- Anthony Robbins."  )
+            print("Your current adventure has come to an end.  Not all paths lead to the other side of the City but nonetheless they are all equally important.  You and only you can determine the sucess or failure of any endevor, each adventure is as unique as the adventurer themselves.  'It is in your moments of decision that your destiny is shaped'.-- Anthony Robbins."  )
 
 
 def choose_action(room, player):
