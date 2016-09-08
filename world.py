@@ -18,8 +18,9 @@ class MapTile:
 class StartTile(MapTile):
     def intro_text(self):
         return """
-       You find yourself 
-        """
+*************************************************************************************\nWelcome to Choice City--the gateway to Enlightenment.  The streets of Choice City are     filled what you would expect given the name, Choices.  These Choices as well as the       ability to learn from your expierences will be critical to the sucess of your journey.        \n*************************************************************************************
+                   "The unexamined life is not worh living. --Socrates" 
+                   ****************************************************"""
 
 
 class EnemyTile(MapTile):

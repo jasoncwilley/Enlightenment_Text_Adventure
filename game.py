@@ -4,7 +4,7 @@ import world
 
 
 def play():
-    print("Welcome to Choice City--the gateway to Enlightenment.  The streets of Choice City are filled what you would expect given the name, Choices.  These Choices as well as the ability to learn from your expierences will be critical to the sucess of your journey.  It shold be noted that while this is a test, it is not one that can be passed or failed, and only the individual taking it can determine it's success or failure. 'The unexamined life is not worh living. --Socrates'")
+    print()
     world.parse_world_dsl()
     player = Player()
     while player.is_alive() and not player.victory:
