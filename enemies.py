@@ -28,8 +28,4 @@ class KarmaChameleon(Enemy):
         self.damage = 4
 
 
-class RockMonster(Enemy):
-    def __init__(self):
-        self.name = "Sloth Monster"
-        self.hp = 80
-        self.damage = 20
+

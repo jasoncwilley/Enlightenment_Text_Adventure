@@ -94,10 +94,15 @@ class VictoryTile(MapTile):
         player.victory = True
 
     def intro_text(self):
-        return """
-        As you approach the backside of the City you stop to gather your thoughts and appreciate the moment.  You turn down the road labeled Destiny lane and see the a structure in the distance.  Excited you walk faster and begin to run.  Enlightment is in your site and you are determinded to get there before night fall.  As the sun goes down you keep walking towards the mystical destination.  Late into the night you are exhuausted and have to stop to sleep. You tell yourself it has to be close I could see it hours ago, I have to be close.  When the sun rises you jump up and quickly notice that you are not any closer to the destination than you were the day before.  At this point you decide to turn around because the realization that Enlightment is a process not a destination.  How far you go down Destiny Lane is exactly how fare you go down Destiny Lane, if you even make it there, depends on you.  
-
-
+        return """**********************************************************************************************\n
+As you approach the backside of the City you stop to gather your thoughts and appreciate the moment.  You turn \n 
+down the road labeled Destiny lane and see the a structure in the distance.  Excited you walk faster and begin \n
+to run.  Enlightment is in your site and you are determinded to get there before night fall.  As the sun goes down\n
+you keep walking towards the mystical destination.  Late into the night you are exhuausted and have to stop to sleep.\n
+You tell yourself "It has to be close"  When the sun rises you jump up and quickly notice that you are not any closer \n
+to the destination than you were the day before.  At this point you decide to turn around because the realization that\n
+Enlightment is a process not a destination.  How far you go down Destiny Lane is exactly how fare you go down Destiny\n
+Lane, if you even make it there, depends on you.\n *******************************************************************************************************************
         Victory Is Yours! or Maybe This is Defeat?
         Like everything else the Choice is Yours!
         """
@@ -118,7 +123,7 @@ class FindGoldTile(MapTile):
     def intro_text(self):
         if self.gold_claimed:
             return """
-            Another unremarkable part of the cave. You must forge onwards.
+            The streets are unusually quiet...
             """
         else:
             return """
@@ -173,8 +178,7 @@ class TraderTile(MapTile):
 
     def intro_text(self):
         return """
-        A frail not-quite-human, not-quite-creature squats in the corner
-        clinking his gold coins together. He looks willing to trade.
+       Describe the Trading Post...
         """
 
 world_dsl = """
