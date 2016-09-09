@@ -85,6 +85,13 @@ or a history of Choices and if this has happend to you while on your journey thr
 self.dead_text =  Dozens of boomerangs have hit your and knocked you to the ground.  Look on the bright side you were able to settle an recent or age old karmatic debt. 'There is such thing as good or bad, right or wrong, those are perspectives of
 what actual is' --Tolle 
 """                              
+        else:
+            self.enemy = enemies.KarmaChameleon()
+            self.alive_text = """
+You feel the wind pick up and you are suddenlylost in swarm of bommerangs!  You quickly notice that these are not your average everyday boomerangs but instead one's that you threw in the distant past.  Everyone has a past or
+or a history of Choices and if this has happend to you while on your journey through the city take a breath and deal with your karma now because by it's very nature it's not coming back to or for you.  Hopefully the former!" 
+self.dead_text =  Dozens of boomerangs have hit your and knocked you to the ground.  Look on the bright side you were able to settle an recent or age old karmatic debt. 'There is such thing as good or bad, right or wrong, those are perspectives of
+what actual is' --Tolle """
         super().__init__(x, y)
 #Defines the intro_text Player will see when they enter room
     def intro_text(self):
@@ -136,28 +143,29 @@ Lane, i  f you even make it there, depends on you.                              
 class FindGoldTile(MapTile):
 #inits self and x, y    
     #super inits x and y        
-    def __init__(items, player, x, y):
+    def __init__(self, x, y):
+        super().__init__(x, y)
 #sets gold for Karma Tiles between 1 and 85 randomly                
-        gold = 10
+        self.gold = 10
 #sets gold_claimed to false        
         self.gold_claimed = False
-def modify_player(self, player):
-    if not self.gold_claimed:
-           self.gold_claimed = True
-           self.gold = player.gold + self.gold
-    print("+{} gold added.".format(self.gold))
+    def modify_player(self, player):
+        if not self.gold_claimed:
+               self.gold_claimed = True
+               self.gold = player.gold + self.gold
+        print("+{} gold added.".format(self.gold))
         
 # dedines intro_text for to be 
-def intro_text(self):
-#sers up condition to print the text depending on gold_claimed         
-    if self.gold_claimed:
-       return """
-            The streets are unusually quiet...
-            """
-    else:
-      return """
-            Someone dropped some gold. You pick it up.
-            """
+    def intro_text(self):
+    #sers up condition to print the text depending on gold_claimed         
+        if self.gold_claimed:
+           return """
+                The streets are unusually quiet...
+                """
+        else:
+          return """
+                Someone dropped some gold. You pick it up.
+                """
 
 #Defines Grid for world map (x,y)
 #(0,0) (0,1) (0,2) (0,3) (0,4) (0,5)
@@ -265,7 +273,7 @@ def create_tiles():
                 global start_tile_location
                 start_tile_location = x, y
             row.append(tile_type(x, y) 
-            if tile_type else None)
+                if tile_type else None)
 
         world_map.append(row)
 

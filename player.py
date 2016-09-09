@@ -7,7 +7,7 @@ import random
 class Player:
     def __init__(self):
 #identifies the inventory varialbes         
-        self.inventory = [tems.Kindness(), items.Forgiveness(), items.Meditation(), items.BeefJerky()]
+        self.inventory = [items.Kindness(), items.Forgiveness(), items.Meditation(), items.BeefJerky()]
 #defines the statting cordinates with x any        
         self.x = world.start_tile_location[0]
         self.y = world.start_tile_location[1]
@@ -60,10 +60,10 @@ class Player:
             except (ValueError, IndexError):
                 print("Invalid choice, try again.")
 
-        def most_powerful_weapon(self):
-            max_damage = 0
-            best_weapon = best_weapon.name
-            best_weapon.name = Meditation
+    def most_powerful_weapon(self):
+        max_damage = 0
+        best_weapon = best_weapon.name
+        best_weapon.name = Meditation
         for item in self.inventory:
             try:
                 if item.damage > max_damage:

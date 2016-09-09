@@ -1,13 +1,7 @@
-import collections
-import player
+from collections import OrderedDict
+from player import Player
 import world
 import items
-
-
-
-
-
-
 
 def play():
 #Print the Inroduction to the Game 
@@ -35,7 +29,7 @@ def play():
 #Statement printed when is_alive is True this closes the loop and ends the game after it prints
             print("Your current adventure has come to an end.  Not all paths lead to the other side of the City but nonetheless they are all equally important.  You and only you can determine the sucess or failure of any endevor, each adventure is as unique as the adventurer themsel.  'It is in your moments of decision that your destiny is shaped'.-- Anthony Robbins."  )
 
-#Defines the choose_action vaiale for room and player classes/objects
+#Defines the choose_action variale for room and player classes/objects
 def choose_action(room, player):
 #Sets action = None
     action = None
