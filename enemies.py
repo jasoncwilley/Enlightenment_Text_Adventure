@@ -25,7 +25,5 @@ class KarmaChameleon(Enemy):
     def __init__(self):
         self.name = "Karma Chameleon"
         self.hp = 100
-        self.damage = 4
-
-
-
+        self.damage = 12
+    
