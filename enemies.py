@@ -26,4 +26,3 @@ class KarmaChameleon(Enemy):
         self.name = "Karma Chameleon"
         self.hp = 100
         self.damage = 12
-    
